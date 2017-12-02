@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/main.js"></script> 
+		<script type="text/javascript" src="js/register.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="headerbox">
+			<div class="header">
+				
+				您好，欢迎光临戴欧妮珠宝网！
+				<a href="login.html">登录</a> / <a href="register.html" class="a">注册</a>
+				体验中心：<a href="#">北京戴欧妮旗舰店</a> <a href="#">切换</a>
+			
+				<p class="right">
+					<a href="#"><span><img src="img/2017_03_24_20_12_03.png" /> </span>我的戴欧妮</a>
+					<a href="shopcar.html">我的珠宝箱[<span class="s">0</span>]</a>
+					><a href="#">正品认证</a>
+					><a href="#">预约进店</a>
+					<a href="#"><em class="aa"></em>手机版</a>
+					<a href="#"><em class="bb"></em>微信</a>
+					<a href="#"><em class="cc"></em>微博</a>
+				</p>
+			</div>
+		</div>
+		<div class="logobox">
+			<div class="logo">
+				<div class="logol"><a href="main.html"><img src="img/logo.png"></a></div>
+				<div class="logom">
+					<div class="search">
+						<div class="search_left">
+							<input type="text" placeholder="请输入型号或者名称"/>
+						</div>
+						<div class="search_right">搜索</div>
+					</div>
+					<ul>
+						<li><a href="#">永恒</a></li>
+						<li><a href="#">浪漫</a></li>
+						<li><a href="#">一生</a></li>
+						<li><a href="#">爱情</a></li>
+						<li><a href="#">蜜语</a></li>
+					</ul>
+				</div>
+				<div class="logor"></div>
+			</div>
+		</div>
+		<div class="menubox">
+			<div class="menu">
+				<div class="menul">
+					<p>所有分类<span></span></P>
+					<div class="menux">
+						<div class="a1">
+							<div class="left">钻石</div>
+							<div class="right">
+								<p><a href="ajax.html">30分</a> <a href="ajax.html">50分</a></p>
+								<p><a href="ajax.html">80分</a> <a href="ajax.html">1克拉</a></p>
+								<p><a href="ajax.html">异形钻</a> <a href="ajax.html">钻石投资</a></p>
+							</div>
+						</div>
+						<div class="a2">
+							<div class="left">戒指</div>
+							<div class="right">
+								<p><a href="ajax.html">钻石女戒</a> <a href="ajax.html">钻石男戒</a></p>
+								<p><a href="ajax.html">情侣对戒</a> <a href="ajax.html">彩宝戒指</a></p>
+							</div>
+						</div>
+						<div class="a3">
+							<div class="left">吊坠</div>
+							<div class="right">
+								<p><a href="ajax.html">钻石吊坠</a> <a href="ajax.html">珍珠吊坠</a></p>
+								<p><a href="ajax.html">彩宝吊坠</a> <a href="ajax.html">珍珠吊坠</a></p>
+								<p><a href="ajax.html">钻石吊坠</a> <a href="ajax.html">珍珠吊坠</a></p>
+							</div>
+						</div>
+						<div class="a4">
+							<div class="left">耳饰</div>
+							<div class="right">
+								<p><a href="ajax.html">钻石耳饰 <a href="ajax.html">珍珠耳饰</a></p>
+								<p><a href="ajax.html">彩宝耳饰</a></p>
+							</div>
+						</div>
+						<div class="a5">
+							<div class="left">
+								<p class="beng">手链</p>
+								<p class="beng">黄金</p>
+							</div>
+							<div class="right">
+								<p><a href="ajax.html">钻石手链</a></p>
+								<p><a href="ajax.html">投资金条</a> <a href="ajax.html">黄金饰品</a></p>
+							</div>
+						</div>
+						<div class="a6">
+							<div class="left">定制</div>
+							<div class="right"><p><a href="ajax.html">戴欧妮加盟咨询</a></p></div>
+						</div>
+					</div>
+				</div>
+				<div class="menum">
+					<ul>
+						<li><a href="main.html">首页</a></li>
+						<li><a href="#">裸钻</a></li>
+						<li><a href="#">钻戒定制</a></li>
+						<li><a href="#">定价产品</a></li>
+						<li><a href="#">黄金</a></li>
+						<li><a href="#">高端定制</a></li>
+						<li><a href="#">珠宝百科</a></li>
+					</ul>
+				</div>
+				<div class="menur">
+					<img src="img/phone.png" /> 
+				</div>
+			</div>
+		</div>
+		<!--注册页----------------------------------------------------------->
+		<div class="registerbox">
+			<div class="register">
+				<div class="registerdiv">
+					<form action="login.html" onsubmit="return checkForm()">
+						<input type="text" class="sleep1" name="phone" id="phone" onblur="checkPhone()" placeholder="11位数字"/><br/>
+						<input type="text" class="sleep2" name="password" /><br/>
+						<input type="text" class="sleep3" placeholder="6位数字"/><span class="span">获取验证码</span><br/>
+						<input type="text" class="sleep4" id="pwd1" onblur="checkPwd1()" placeholder="6-20位必须包含字母数字"/><br/>
+						<input type="text" class="sleep5" id="pwd2" onblur="checkPwd2()" placeholder="6-20位必须包含字母数字"/><br/>
+						<input type="checkbox" class="sleep6" id="yes"/>我已阅读并同意《<span class="apan">戴欧妮珠宝用户服务协议</span>》<br/>
+						<input type="submit" class="denglu" value="会员注册"/>
+					</form>
+					<div class="img">
+						<a href="#"><img class="img1" src="img/Connect_logo_7.png" /></a>
+						<a href="#"><img class="img2" src="img/wb.gif" /></a>
+						<a href="#"><img src="img/zfb.gif" /></a>
+					</div>
+				</div>
+				<div class="tiao">
+					<div class="top" id="top">戴欧妮珠宝用户服务协议 <span>×</span></div>
+					<div class="bottom">
+					<p>	欢迎您注册成为戴欧妮官方主站会员！请仔细阅读下面的协议，只有接受协议才能继续进行注册。</p>
+<p>一、有效性：
+这些交易条件的条款适用于由戴欧妮为您提供的商品销售服务。戴欧妮有权在必要时修改服务条款，任何修正条款的发生，戴欧妮官方网站都将会即时公布。请您务必在注册之前认真阅读全部服务协议内容，如有任何疑问，可向戴欧妮咨询。 无论您事实上是否在注册之前认真阅读了本服务协议，只要您按照戴欧妮注册程序成功注册为会员，您的行为仍然表示您同意并签署了本服务协议。</p>
+<p>二、戴欧妮和您之间的契约：
+戴欧妮将尽最大努力保证您所购商品与网站上公布的价格一致，但价目表和声明并不构成要约。有权在发现了购物程序上显现的商品及订单的明显错误或缺货的情况下，单方面撤回任何契约，同时保留对商品订购数量的限制权。在下订单的同时，您也同时承认了您已经达到购买这些商品的法定年龄，并将对您在订单中提供的所有信息的真实性负责。会员需要同意：提供及时、详尽及准确的个人资料；同意接收来自戴欧妮的信息。会员应妥善保管自己的帐号和密码，并对其帐号中的所有活动和事件负全部责任。会员同意若发现任何非法使用会员帐号或安全漏洞的情况，请立即戴欧妮。</p>
+<p>三、价格变化和缺货可能性：
+商品的定价和可获性都在戴欧妮网站上指明，商品的价格都包含了增值税。这类信息将随时更改且不发任何通知。如果发生了意外情况，在确认了您的订单后，由于供应商提价，税额变化引起的价格变化，或是由于网站的错误等造成戴欧妮官网价格变化，戴欧妮有权单方面取消您的订单。</p>
+<p>四、邮件和短信服务：
+戴欧妮保留通过邮件和短信的形式，对本网站注册、购物会员发送订单信息、促销活动等告知服务的权利。如果您在戴欧妮成功注册、购物，表明您已默示接受此项服务。如果您不想接收来自戴欧妮的邮件和短信，请按相应方式回复短信取消或在邮件下方输入您的邮箱地址自助完成退阅；您也可以向戴欧妮官网客服提出退阅申请，并注明您的邮箱地址或手机号，戴欧妮客服会在收到邮件后为您办理退阅。</p>
+<p>五、送货：
+戴欧妮将会把商品送到您所指定的送货地址。所有在戴欧妮官方网站上列出的送货时间为参考时间，参考时间的计算是根据库存状况、正常的处理过程和送货时间、送货地点的基础上估计得出的。</p>
+<p>六、条款的可执行性：
+如果出于任何原因，这些条款及其条件的部分不能得以执行，其他条款及其条件的有效性将不受影响。</p>
+<p>七、适用的法律和管辖权：
+您和戴欧妮之间的契约将适用中华人民共和国的法律，所有的争端将诉诸于戴欧妮办公所在地的人民法院。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+	var pwd1 = document.getElementById("pwd1");
+	var yes = document.getElementById("yes");
+	var pwd2 = document.getElementById("pwd2");
+	var phone = document.getElementById("phone");
+	function checkForm(){
+		if(checkPhone()&&checkPwd1()&&checkPwd2()&&checkYes()){	
+			var name = phone.value;
+			var pwd = pwd1.value;
+			var d={
+				"uname":name,
+				"upwd":pwd
+			}
+			setCookie("userInfo",JSON.stringify(d),1);
+			alert("注册成功！");
+			return true;			
+		}else{
+			return false;		
+		}
+	}
+	function checkPhone(){
+		var reg = /^[1-9]\d{10}$/;
+		if(reg.test(phone.value)){
+			return true;
+		}else{
+			alert("请输入正确的手机号！");
+			return false;
+		}
+	}
+	function checkPwd1(){
+		var reg = /^(?!(?:\d+|[a-zA-Z]+)$)[\da-zA-Z]{6,20}$/;
+		if(reg.test(pwd1.value)){
+			return true;
+		}else{
+			alert("密码格式不符合规格！");
+			return true;
+		}
+	}
+	function checkPwd2(){
+		if(pwd1.value == pwd2.value){
+			return true;
+		}else{
+			alert("两次输入的密码不一样！");
+			return false;
+		}
+	}
+	function checkYes(){
+		var flag = true;
+		if(yes.checked){
+			flag = false;
+		}
+		if(!flag){
+			return true;
+		}else{
+			return false;
+		}
+	}
+</script>
+		
+		
+		<div class="security"></div>
+		<div class="shoubox">
+			<div class="shou">
+				<div class="shou1">
+					<div class="hou1"></div>
+					<ul>
+						<li><b>购买支付</b></li>
+						<li><a href="#">新手教程</a></li>
+						<li><a href="#">订购流程</a></li>
+						<li><a href="#">支付常见问题</a></li>
+					</ul>
+				</div>
+				<div class="shou1">
+					<div class="hou2"></div>
+					<ul>
+						<li><b>收货指南</b></li>
+						<li><a href="#">订单处理时间</a></li>
+						<li><a href="#">配送方法和收费</a></li>
+						<li><a href="#">防伪包装</a></li>
+					</ul>
+				</div>
+				<div class="shou1">
+					<div class="hou3"></div>
+					<ul>
+						<li><b>售后服务</b></li>
+						<li><a href="#">质量承诺</a></li>
+						<li><a href="#">购物协议</a></li>
+						<li><a href="#">售后服务</a></li>
+					</ul>
+				</div>
+				<div class="shou1">
+					<div class="hou4"></div>
+					<ul>
+						<li><b>会员中心</b></li>
+						<li><a href="#">如何成为会员</a></li>
+						<li><a href="#">积分规则</a></li>
+						<li><a href="#">优惠政策</a></li>
+					</ul>
+				</div>
+				<div class="shou1">
+					<div class="hou5"></div>
+					<ul>
+						<li><b>关于戴欧妮</b></li>
+						<li><a href="#">戴欧妮介绍</a></li>
+						<li><a href="#">戴欧妮资质</a></li>
+						<li><a href="#">戴欧妮优势</a></li>
+					</ul>
+				</div>
+				<div class="shou1">
+					<div class="hou6"></div>
+					<ul>
+						<li><b>更多服务</b></li>
+						<li><a href="#">鉴定机构</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">网站地图</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="blackbox">
+			<div class="black">
+				<div class="black_left">
+					<p>体验中心地址：新疆乌鲁木齐市北京南路556号小西沟京华杰座711室 联系电话：0991-3671906</p>
+					<p>Copyright @ 2007-2014 深圳市戴欧妮网络科技有限公司 ALL Rights Reserved 经营许可证编号：粤B2-20080371 粤ICP备11058956号-1</p>
+				</div>
+				<div class="black_right">
+					<p>全球24小时服务热线</p>
+					<p><span>4006-578-478</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="chengbox">
+			<div class="cheng">
+				<a href="#"><div class="chengx dong"></div></a>
+				<a href="#"><div class="chengx dong"></div></a>
+				<a href="#"><div class="chengx dong"></div></a>
+				<a href="#"><div class="chengx dong"></div></a>
+				<a href="#"><div class="chengx dong"></div></a>				
+				<a href="#"><div class="chengx dong"></div></a>
+				<a href="#"><div class="chengx"></div></a>				
+			</div>
+		</div>
+	
+		<ul class="jue">
+			<li>
+				<a href="shopcar.html">
+					<div>
+						<img src="img/sqzx.png"/>
+						<p>购物车</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<div>
+					<img src="img/sqzx.png"/>
+					<p>售前客服</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="img/sazx.png"/>
+					<p>售后咨询</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<img src="img/sazx1.png"/>
+					<p>加盟咨询</p>
+				</div>
+			</li>
+			<li>
+				<div class="erba">
+					<img src="img/ewm.png"/>
+					<p>二维码</p>					
+				</div>
+				
+			</li>
+			<li>
+				<div class="ding">
+					<img src="img/db5.png"/>
+					<p>返回顶部</p>
+				</div>
+			</li>
+		</ul>
+		<div class="erweima"></div>		
+	</body>
+</html>

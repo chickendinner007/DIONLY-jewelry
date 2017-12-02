@@ -1,0 +1,65 @@
+.loginbox{
+	width:100%;
+	height:588px;
+	background:#fff5f4;
+}
+.login{
+	width:1262px;
+	height:588px;
+	margin:0 auto;
+	position:relative;
+	background:url(../img/login.jpg) -320px 0;
+}
+.logindiv{
+	width:400px;
+	height:368px;
+	position:absolute;
+	bottom:117px;
+	right:149px;
+	font-size:14px;
+}
+.logindiv .deng{
+	width:160px;
+	height:30px;
+	margin-left:143px;
+	outline:none;
+	border:none;
+}
+.logindiv .top{
+	margin-top:74px;
+}
+.logindiv .bottom{
+	margin-top:24px;
+}
+.logindiv .lu{
+	margin-top:26px;
+	margin-left:60px;
+}
+.logindiv .a{
+	margin-left:135px;
+}
+a:hover{
+	color:#dd4e50;
+}
+.denglu{
+	margin-left:60px;
+	margin-top:20px;
+	width:278px;
+	height:32px;
+	border:#d64548;
+	color:white;
+	background:url(../img/2017_03_31_11_26_03.png);
+}
+.img{
+	width:400px;
+	height:65px;
+	margin-top:55px;
+}
+.img1{
+	margin-left:81px;
+	margin-bottom:12px;
+}
+.img2{
+	margin-left:30px;
+	margin-right:10px;
+}

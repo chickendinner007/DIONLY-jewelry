@@ -1,0 +1,306 @@
+
+.bannerbox{
+	height:420px;
+	width:100%;
+	position:relative;
+	overflow:hidden;
+}
+.banner img{
+	display:block;
+	height:420px;
+	position:absolute;
+	left:-340px;
+}
+.banner ul li{
+	position:absolute;
+}
+/*.xxx{
+	z-index:1;
+}*/
+.banner ol{
+	position:absolute;
+	left:0;
+	bottom:20px;
+	left:700px;
+	z-index:1000;
+}
+.banner ol li{
+	display:block;
+	width:15px;
+	height:15px;
+	background:#666;
+	float:left;
+	border-radius:50%;
+	margin-right:20px;
+}
+.homelinebox{
+	width:100%;
+}
+.homeline{
+	width:1180px;
+	height:210px;
+	margin:0 auto;
+	margin-top:20px;
+	text-align:center;
+}
+.homeline .homel{
+	width:310px;
+	height:205px;
+	float:left;
+}
+.homeline .homem{
+	width:501px;
+	height:205px;
+	float:left;
+}
+.homeline .homer{
+	width:310px;
+	height:205px;
+	float:left;
+}
+.homel,.homem,.homer{
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid #ddd;
+}
+.homem,.homer{
+	margin-left:11px;
+}
+.homel a:hover,.homem a:hover,.homer a:hover{
+	color:#c11e20; 
+}
+.dabox{
+	width:100%;
+	margin-top:20px;
+}
+.da{
+	width:1178px;
+	height:158px;
+	background:#f9f9f9;
+	border:1px solid #ddd;
+	margin:0 auto;
+}
+.da_left{
+	width:597px;
+	height:122px;
+	float:left;
+}
+.da_left img{
+	margin-top:18px;
+}
+.da_right{
+	width:568px;
+	height:158px;
+	float:left;
+}
+.da_right .duan,.da_right .chang,.da_right .niubi{
+	float:left;
+	margin-left:20px;
+	margin-top:18px;
+	border-radius:3px;
+}
+.da_right .duan{
+	width:210px;
+	height:29px;
+	border:1px solid #ddd;
+}
+.da_right .chang{
+	width:293px;
+	height:29px;
+	border:1px solid #ddd;
+}
+.dabox .da .da_right .niubi{
+	width:86px;
+	height:32px;
+	background:#636363;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	line-height:32px;
+	cursor:pointer;
+	margin-top:9px;
+	margin-left:374px;
+}
+.da_right .duan .right{
+	float:left;
+	width:163px;
+}
+.da_right .chang .right{
+	float:left;
+	width:246px;
+}
+.da_right .left{
+	width:46px;
+	height:29px;
+	background:#e4e4e4;
+	text-align:center;
+	line-height:29px;
+	font-weight:bold;
+	float:left;
+	font-size:14px;
+	border-right:1px solid #ddd;
+}
+.da_right input{
+	width:100%;
+	height:28px;
+	border:none;
+	outline:none;
+}
+.clonebox{
+	width:100%;
+	margin-top:20px;	
+}
+.clone{
+	width:1180px;
+	height:429px;
+	margin:0 auto;
+}
+.clonel{
+	width:321px;
+	height:429px;
+	background:url(../img/1.jpg);
+	font-size:12px;
+	float:left;
+}
+.clonel_top{
+	width:321px;
+	height:184px;	
+}
+.clonel_bottom p{
+	margin-left:30px;
+	margin-top:10px;	
+}
+.clonel_bottom .yuan{
+	width:100px;
+	height:45px;
+}
+.clonel_bottom .gai{
+	width:100px;
+	height:23px;
+}
+.clonel a:hover{
+	color:#e93436;
+}
+.clone .wu{
+	background:url(../img/iiiii/q1.jpg);
+}
+.clone .shi{
+	background:url(../img/iiiii/w1.jpg);
+}
+.clone .yi{
+	background:url(../img/iiiii/e1.jpg);
+}
+.clone .dao{
+	background:url(../img/iiiii/r1.jpg);
+}
+.clonec{
+	width:259px;
+	height:429px;
+	float:left;
+}
+.cloner{
+	width:600px;
+	height:429px;
+	float:left;
+}
+.cloner .cloner_top{
+	width:600px;
+	height:211px;
+}
+.cloner .cloner_top .top1{
+	width:299px;
+	height:211px;
+	float:left;
+}
+.cloner .cloner_top .top2{
+	width:301px;
+	height:211px;
+	float:left;
+}
+.cloner .cloner_bottom{
+	width:600px;
+	height:429px;
+}
+.cloner .cloner_bottom .bottom1{
+	width:200px;
+	height:218px;
+	float:left;
+}
+.cloner .cloner_bottom .bottom2{
+	width:195px;
+	height:218px;
+	float:left;
+}
+.cloner .cloner_bottom .bottom3{
+	width:205px;
+	height:218px;
+	float:left;
+}
+.chabox1,.chabox2{
+	width:100%;
+	height:116px;
+	margin-top:20px;
+}
+.cha1,.cha2{
+	width:1180px;
+	height:116px;
+	margin:0 auto;
+}
+.cha1 img{
+	float:left;
+}
+.zibox{
+	width:100%;
+	margin-top:20px;
+}
+.zi{
+	width:1180px;
+	height:288px;
+	margin:0 auto;
+}
+.zi1{
+	width:320px;
+	height:288px;
+	border:1px solid #e3e3e3;
+	float:left;
+}
+.zi4{
+	width:184px;
+	height:290px;
+	margin-left:10px;
+	float:left;
+}
+.zi .nuo{
+	margin-left:10px;
+}
+.zi .zi_top{
+	width:320px;
+	height:33px;
+	background:url(../img/headbg.jpg);
+	font-size:12px;
+	line-height:33px;
+	font-weight: bold;
+}
+.zi_top p{
+	margin-left:15px;
+}
+.zi_image{
+	width:310px;
+	height:95px;
+	margin-top:5px;
+	margin-left:5px;
+}
+.zi .wen{
+	font-size:12px;
+}
+.zi .wen li{
+	margin-left:19px;
+	margin-top:12px;
+}
+.zi a:hover{
+	color:#c11e20;
+}
+
+
